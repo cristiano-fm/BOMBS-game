@@ -1,1 +1,1 @@
-# BO-MBS-game
+# BOMBS-game
