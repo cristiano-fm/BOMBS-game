@@ -1,0 +1,74 @@
+
+body {
+  background: url("../media/bgsu5.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/*---------------GRID-SETTINGS-(small screens)--------------------------------*/
+
+.titl {
+  grid-column: 1/ 6 ;
+  grid-row: 2 / 2;
+  max-height: 70px;
+  overflow: hidden;
+}
+
+.tutorial{
+  grid-column: 1 / 6;
+  grid-row: 3 / 5;
+}
+
+.rules{
+  grid-column: 1 / 6;
+  grid-row: 5 / 7;
+  overflow: auto;
+}
+
+.gameplay{
+  grid-column: 1 / 6;
+  grid-row: 7 / 9;
+  overflow: auto;
+}
+
+.ships {
+  grid-column: 1 / 6;
+  grid-row: 9 / 10;
+  overflow: auto;
+}
+
+/*---------------MEDIA-QUERIES------------------------------------------------*/
+
+
+@media only screen and (min-width: 600px) {
+
+  /*---(big screens)---*/
+
+  .titl {
+    grid-column: 5 / 7 ;
+    grid-row: 6 / 8;
+  }
+
+  .tutorial {
+    grid-column: 4 / 8;
+    grid-row: 9 / 16;
+  }
+
+  .ships {
+    grid-column: 1 / 4;
+    grid-row: 13 / 19;
+  }
+
+  .rules{
+    grid-column: 1 / 4;
+    grid-row: 6 / 13;
+  }
+
+  .gameplay{
+    grid-column: 8 / 11;
+    grid-row: 6 / 19;
+  }
+}

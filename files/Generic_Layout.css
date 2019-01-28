@@ -1,0 +1,88 @@
+
+body {
+  background: url("../media/bgsu2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-width: 300px;
+  min-height: 200px;
+  margin: 0px;
+}
+
+
+/*---------------GRID-SETTINGS-(small screens)--------------------------------*/
+
+
+.grid {
+  height: 200vh;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 8px;
+  padding: 6px 12px 12px 12px ;
+}
+
+.grid-board{
+  background: rgba(34,34,34,0.55);
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  border-radius: 11px;
+}
+
+.dark-grid-board{
+  background: rgba(34,34,34,0.8);
+  box-shadow: 0 0 5px rgba(0,0,0,0.7);
+  border-radius: 12px;
+}
+
+.soft-grid-board{
+  background: rgba(34,34,34,0.2);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 12px;
+}
+
+header {
+  grid-column: 1 / 6;
+  grid-row: 1 / 2;
+  height: 51px;
+  min-width: 306px;
+  overflow: hidden;
+}
+
+footer {
+  grid-column: 1 / 6;
+  grid-row: 10 / 11;
+  position: fixed;
+  bottom: -52px;
+  right: 30%;
+  left: 30%;
+  height: 80px;
+}
+
+/*---------------MEDIA-QUERIES------------------------------------------------*/
+
+
+@media only screen and (min-width: 600px) {
+
+/*---(big screens)---*/
+
+  .grid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 8px;
+    padding: 6px 12px 12px 12px ;
+  }
+
+  header {
+    grid-column: 1 / 11;
+    grid-row: 1 / 3;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  footer {
+    grid-column: 4 / 8;
+    grid-row: 20 / 21;
+  }

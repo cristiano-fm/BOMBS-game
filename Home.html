@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title> BOMBS </title>
+    <link rel="icon" type="image/png" href="./media/BOMBS_icon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="./files/Style.css">
+    <link rel="stylesheet" type="text/css" href="./files/Generic_Layout.css">
+    <link rel="stylesheet" type="text/css" href="./files/Home_Layout.css">
+    <script src="./files/HomePage.js"></script>
+    <script src="./files/LoginCheck.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <section id="loading-screen">
+    </section>
+    <section class="grid">
+      <header class="grid-board" id="login-check">
+        <img id="logo" src ="./media/BOMBS_logo_2.png" alt="Bombs logo">
+      </header>
+      <nav class="nav-grid grid-board">
+        <a class="button one color1 zoom" href="SobreNos.html">
+          <span> Sobre Nós </span>
+        </a>
+        <a class="button two color2 zoom" href="Historia.html">
+          <span> História </span>
+        </a>
+        <a class="button tree color3 zoom" href="Tutorial.html">
+          <span> Tutorial & Regras </span>
+        </a>
+      </nav>
+      <section class="main">
+        <img id="main-logo" src ="./media/BOMBS_logo_2.png" alt="Bombs logo">
+        <img id="start-game" class="zoom-extra" src="./media/Play_button.png" alt="Botão play">
+      </section>
+      <section class="grid-board table">
+        <section class="w3-container">
+          <h2 class="white bold">Pontuações</h2>
+          <section class="table-container">
+            <table class="w3-table-all w3-hoverable" id="high-scores-table">
+              <thead>
+                <tr class="w3-teal">
+                  <th>Nome</th>
+                  <th>Pontos</th>
+                  <th>Tempo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!--JS ESCREVE AQUI-->
+              </tbody>
+            </table>
+          </section>
+        </section>
+      </section>
+      <section class="grid-board white" id="music-box">
+        <h5 class="title"> Música </h5>
+        <audio controls loop>
+        <source src="./media/marlboro-a_great_day.mp3" type="audio/mpeg">
+          O teu navegador não suporta o elemento de áudio.
+        </audio>
+      </section>
+      <footer class="soft-grid-board dark-footer">
+        <p class="footer-height">Cristiano Matias, Carolina Maia, Marcelo Teles, FCUL ITW 2018, copyrights &copy;</p>
+      </footer>
+    </section>
+  </body>
+</html>

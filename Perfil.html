@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Perfil </title>
+    <link rel="icon" type="image/png" href="./media/BOMBS_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="./files/Style.css">
+    <link rel="stylesheet" type="text/css" href="./files/Generic_Layout.css">
+    <link rel="stylesheet" type="text/css" href="./files/Perfil_Layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./files/Perfil.js" charset="utf-8"></script>
+
+  </head>
+  <body class="grid">
+    <header class="grid-board">
+      <a href="Home.html">
+        <img class="zoom" id="logo" src ="./media/BOMBS_logo_2.png" alt="BOMBS logo">
+      </a>
+      <a class="button right color3 zoom" href="Home.html"> Voltar </a>
+    </header>
+
+    <section class="grid-board bold white perfil" id="perfil">
+      <h3 class="color2 dados bold" >Nome</h3>
+      <p id="nameuser"></p>
+      <h3 class="color2 dados bold">Data de Nascimento</h3>
+      <p id="dateuser"></p>
+      <h3 class="color2 dados bold">E-mail</h3>
+      <p id="emailuser"></p>
+    </section>
+
+    <section class="grid-board bold white userscore" id="userscore">
+      <section class="w3-container">
+        <h3 class="white bold"> Estatísticas de jogos </h3>
+        <table class="w3-table-all w3-hoverable" id="high-scores-table">
+          <thead>
+            <tr class="w3-teal">
+              <th>Pontos</th>
+              <th>Tempo (em segundos)</th>
+            </tr>
+          </thead>
+          <tbody>
+          <!--JS ESCREVE AQUI-->
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    </section>
+    <section class="grid-board white" id="music-box">
+      <h5 class="title"> Música </h5>
+      <audio controls loop>
+      <source src="./media/marlboro-a_great_day.mp3" type="audio/mpeg">
+        O teu navegador não suporta o elemento de áudio.
+      </audio>
+    </section>
+
+    <footer class="soft-grid-board">
+      <p class="footer-height">Cristiano Matias, Carolina Maia, Marcelo Teles, FCUL ITW 2018, copyrights &copy;</p>
+    </footer>
+  </body>
+  </html>

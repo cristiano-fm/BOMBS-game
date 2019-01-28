@@ -1,0 +1,67 @@
+
+body {
+  background: url("../media/bgsu5.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*---------------GRID-SETTINGS-(small screens)--------------------------------*/
+
+.grid {
+  height: 100vh;
+}
+
+.game{
+  grid-column: 1 / 6;
+  grid-row: 3 / 8;
+}
+
+.panel{
+  grid-column: 1 / 6;
+  grid-row: 8 / 9;
+}
+
+/*---------------MENU-GRID----------------------------------------------------*/
+
+
+.control-panel-grid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+    padding: 0px;
+}
+
+.one{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.two{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.three{
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+
+/*---------------MEDIA-QUERIES------------------------------------------------*/
+
+
+@media only screen and (min-width: 600px) {
+
+  .game{
+    grid-column: 3 / 9;
+    grid-row: 5 / 16;
+  }
+
+  .panel{
+    grid-column: 3 / 9;
+    grid-row: 16 / 18;
+  }
+}

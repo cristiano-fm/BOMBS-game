@@ -1,0 +1,35 @@
+
+/*---------------GRID-SETTINGS-(small screens)--------------------------------*/
+
+.grid{
+    height: 100vh;
+}
+
+.perfil{
+  grid-column: 1 / 6;
+  grid-row: 2 / 7;
+  overflow: auto;
+}
+
+.userscore{
+  grid-column: 1 / 6;
+  grid-row: 7 / 10;
+  overflow: auto;
+}
+
+/*---------------MEDIA-QUERIES-------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+
+/*---(big screens)---*/
+
+  .perfil{
+    grid-column: 4 / 8;
+    grid-row: 3 / 12;
+  }
+
+  .userscore{
+    grid-column: 4 / 8;
+    grid-row: 12 / 20;
+  }
+}

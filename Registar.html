@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="icon" type="image/png" href="./media/BOMBS_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="./files/Style.css">
+    <link rel="stylesheet" type="text/css" href="./files/Generic_Layout.css">
+    <link rel="stylesheet" type="text/css" href="./files/LoginRegistar_Layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="./files/Registar.js"></script>
+  </head>
+    <body class="grid">
+    <header class="grid-board">
+      <a href="Home.html">
+        <img class="zoom" id="logo" src ="./media/BOMBS_logo_2.png" alt="BOMBS logo">
+      </a>
+      <a class="button right color3 zoom" href="Home.html"> Voltar </a>
+    </header>
+
+
+    <section class="grid-board bold white regist">
+    <h3 class="margin-top">Preenche todos os campos para te registares</h3>
+    <form name = "registForm" id="registForm">
+          <input type="text" name="username" placeholder="Username"
+          class="w3-input w3-border w3-center input-bubble" id="nickName"/>
+          <input type="password" name="password" placeholder="Password"
+          class="w3-input w3-border w3-center input-bubble" id="pass"/>
+          <input type="text" onfocus="(this.type='date')" name="date" placeholder="Data de narcimento"
+          class="w3-input w3-border w3-center input-bubble" id="date"/>
+          <input type="text" name="email" placeholder="Email"
+          class="w3-input w3-border w3-center input-bubble" id="email"/>
+    </form>
+    </section>
+
+    <section class="grid-board subm nav-grid">
+    <a class="button color2 zoom subm-button" name ="submission"
+    value="submit" id="submit">Submeter</a>
+    </section>
+
+    <footer class="soft-grid-board">
+      <p class="footer-height">Cristiano Matias, Carolina Maia,
+        Marcelo Teles, FCUL ITW 2018, copyrights &copy;</p>
+    </footer>
+    </body>
+</html>
